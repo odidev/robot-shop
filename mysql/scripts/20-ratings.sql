@@ -11,6 +11,5 @@ CREATE TABLE ratings (
 ) ENGINE=InnoDB;
 
 
-GRANT ALL ON ratings.* TO 'ratings'@'%'
-IDENTIFIED BY 'iloveit';
-
+CREATE USER 'ratings'@'%' IDENTIFIED BY 'iloveit';
+GRANT ALL ON ratings.* TO 'ratings'@'%';
